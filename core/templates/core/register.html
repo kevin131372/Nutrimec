@@ -1,0 +1,27 @@
+
+{% extends 'core/index.html' %}
+{% load  static %}
+{% block title %} Registro {% endblock %}
+
+{% block static %} 
+    <link  type='text/css' href='{% static "css/estiloForm.css" %}' rel='stylesheet'> 
+{% endblock %}
+    S
+{% block content %}
+
+    <body>
+        <section class="form-register">
+        <h4>Formulario de Registro</h4>
+        <form action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
+            <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="lastname" id="lastname" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+            <P>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Registrar">
+            <p><a href="#">¿Ya tengo cuenta?</a></p>
+        </form>
+        </section>
+    </body>
+{% endblock %}

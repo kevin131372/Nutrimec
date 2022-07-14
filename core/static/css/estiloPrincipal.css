@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+.body{
+    padding: 0;
+    margin: 0;
+    background-size: 100%;
+}
+
+.container{
+    background-color: rgb(6, 56, 56);
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 6px;
+    font-family: 'Rubik Moonrocks';
+    
+}
+
+.nav-item{
+    list-style: none;
+    
+}
+
+.nav-link{
+    text-decoration:none;
+    color:aliceblue;
+    
+}
+
