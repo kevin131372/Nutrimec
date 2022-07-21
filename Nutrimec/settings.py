@@ -65,10 +65,10 @@ WSGI_APPLICATION = 'Nutrimec.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'numeri2',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': '127.0.0.1',
+        'NAME': 'nutrimec_db',
+        'USER': 'nutrimec_kevin',
+        'PASSWORD': 'Kevin2002.',
+        'HOST': 'postgresql-nutrimec.alwaysdata.net',
         'DATABASE_PORT': '5432'
 
     }
