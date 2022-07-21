@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
     <title>{% block title %} {% endblock %} | Nutrimec</title>     
     {% load  static %}
     <link type="text/css"  href='{% static "css/estiloPrincipal.css" %}' rel="stylesheet">
@@ -19,10 +21,123 @@
               <a class="nav-link" href="{% url 'index' %}">Nutrimec</a>
             </li>
       </div>
-
+{% block Navegación %}
+    <header>
+      <ul >
+        <div class="menu">
+          <img class="img2" src="/static/img/logon.jpg" alt="">
+          <nav>
+            <ul>
+              <li><a  href="{% url 'contact' %}">Contactos </a></li>
+              <li><a href="{% url 'register' %}">Recetas </a></li>
+              <li><a href="{% url 'nosotros' %}">Nosotros </a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </ul>
+    </header>  
+{% endblock %}
 <!--contendio-->
-    {% block content %} {% endblock %}
+    {% block content %} 
+      <header class="imgprin">
+        <section class="imgprincipal">
+          <img src="/static/img/imagenprincipal.jpg" alt="" width="100%">
+        </section>
+        <section class="cuerpo">
+          <h1 class="titulo">
+            Bienvenidos a tu nutricionista de confianza
+          </h1>
+          <article class="caja">
+            <div class="subtitulos">
+              <img src="/static/img/brocoli.jpg" alt="" class="efecto" width="310px">
+                <h3 class="servicios">
+                Recetas 01
+                </h3>
+              </div>
+              <div class="contenido">
+                <p class="tituloreceta">Brocoli Asado Picante</p>
+                <p>
+                El brócoli es una verdura de invierno que empieza a 
+                aparecer en estas fechas por nuestras fruterías.
+                Tiene un alto contenido en fibra y aporta muchas 
+                vitaminas y pocas calorías. Además contiene un compuesto,
+                 el sulforafano, al que se atribuyen propiedades 
+                 antioxidantes y antibacterianas... </p>
+                <center><input type="submit"class="boton"value="ACCEDER">
+                </center>
+              </div>
+          </article>
+          <article class="caja">
+            <div class="subtitulos">
+              <img src="/static/img/salmon.jpg" alt="" class="efecto" width="310px">
+              <h3 class="servicios">
+                Recetas 02
+              </h3>
+            </div>
+            <div class="contenido">
+                <p class="tituloreceta">Salmón al Horno</p>
+                <p>
+                En otoño e invierno suele disminuir nuestro consumo de 
+                pescadoy no hay ninguna razón para que esto ocurra. 
+                El salmón, además, tiene la misma calidad durante todo el año, 
+                es rico en vitamina D, algo que nos viene genial 
+                ahora que hay menos horas de sol...</p>
+                <center><input type="submit"class="boton"value="ACCEDER">
+                </center>
+              </div>
+          </article>
+          <article class="caja">
+            <div class="subtitulos">
+              <img src="/static/img/calabaza.jpg" alt="" class="efecto" width="310px">
+              <h3 class="servicios">
+                Recetas 03
+              </h3>
+            </div>
+            <div class="contenido">
+                <p class="tituloreceta">Crema de Calabaza</p>
+                <p>La calabaza, que ahora mismo está en temporada y se 
+                encuentra casi regalada en las fruterías, es una hortaliza
+                baja en calorías con un alto contenido en fibra y vitamina A.
+                Su color naranja es consecuencia de su alto contenido de 
+                beta caroteno que ayuda a prevenir enfermedades del corazón...</p>
+                <center><input type="submit"class="boton"value="ACCEDER">
+                </center>
+              </div>
+          </article>
+        </section>
+      </header>
+      {% endblock %}
 
-
+<!--pie de pagina --> 
+{% block footer %}
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a>
+            <img src="/static/img/logon.jpg" alt="logo de nutrimec">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>Sobre Nosotros</h2>
+        <p> Te ayudamos a que tengas una mejor salud y asi cuidar tu vida.</p>
+        <p> Tu salud es lo más improtante para nosotros.</p>
+      </div>
+      <div  class="box">
+        <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"> </a>
+                  <a href="https://www.instagram.com/nutrimec_/" class="fa fa-instagram"> </a>
+                  <a href="#" class="fa fa-twitter"> </a>
+                <a href="#" class="fa fa-youtube"> </a>
+            </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy;2022<b>Nutrimec</b>-Todos los Derechos Reservados.</small>
+    </div>
+  {% endblock %}
   </body>
 </html>

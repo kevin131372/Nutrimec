@@ -7,9 +7,12 @@
 
 body{
     background-image: url('/static/img/frutas.jpg');
+    
 }
 
+
 .form-register{
+  
     width: 600px;
     background:  rgb(6, 56, 56);
     padding: 30px;

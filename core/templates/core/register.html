@@ -6,12 +6,14 @@
 {% block static %} 
     <link  type='text/css' href='{% static "css/estiloForm.css" %}' rel='stylesheet'> 
 {% endblock %}
-    S
+{% block Navegación %}{% endblock %}
+    
 {% block content %}
 
     <body>
         <section class="form-register">
-        <h4>Formulario de creacion de usuarios</h4>
+        
+        <h4>Llenar Formulario Para Ver Recetas</h4>
         <form action="{% url 'register' %}" method="POST">
             {% csrf_token %}
             <input class="controls" type="text" name="name" id="name" placeholder="Ingrese su Nombre">
@@ -23,5 +25,8 @@
             <p><a href="#">¿Ya tengo cuenta?</a></p>
         </form>
         </section>
+    
     </body>
 {% endblock %}
+
+{% block footer %} {% endblock %}

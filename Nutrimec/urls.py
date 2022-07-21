@@ -19,7 +19,10 @@ from django.urls import path
 from core import views as core_views
 
 urlpatterns = [
-    path('index/', core_views.index, name="index" ),
-    path('', core_views.register, name="register" ),
+    path('', core_views.index, name="index" ),
+    path('register/', core_views.register, name="register" ),
+    path('contact/', core_views.contact, name="contact" ),
+    path('nosotros/', core_views.nosotros, name="nosotros" ),
+    path('recetas/', core_views.recetas, name="recetas" ),
     path('admin/', admin.site.urls),
 ]
