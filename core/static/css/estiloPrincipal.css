@@ -233,3 +233,30 @@ nav ul li a:hover::before{
     width: 100%;
 
 }
+/*estilos de acceder*/
+#main-contaiener{
+    padding-top: 100px;
+    text-align: center;
+}
+.btn{
+    margin-top: 20px;
+    border-radius: 6px;
+    padding:16px 18px ;
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.3);
+    box-shadow:0 4px 0 rgba(0,0,0,0.3) ;
+    
+}
+.btn-green{
+    color: rgb(255, 255, 255);
+    background-color: #0a1a2a;
+    border: 3px solid red;
+    cursor: pointer;
+}
+.btn-green:hover{
+    background-color: #630a0a;
+}
+.btn-green:active{
+    background-color: #415d69;
+}
