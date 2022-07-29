@@ -20,6 +20,9 @@ def register (request):
         User()
     return render(request, 'core/register.html')
 
+def login (request):
+    return render(request, 'core/login.html')
+
 def index (request):
     return render(request, 'core/index.html')
 

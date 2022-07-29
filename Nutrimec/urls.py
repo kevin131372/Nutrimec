@@ -21,6 +21,7 @@ from core import views as core_views
 urlpatterns = [
     path('', core_views.index, name="index" ),
     path('register/', core_views.register, name="register" ),
+    path('login/', core_views.login, name="login" ),
     path('contact/', core_views.contact, name="contact" ),
     path('nosotros/', core_views.nosotros, name="nosotros" ),
     path('recetas/', core_views.recetas, name="recetas" ),
