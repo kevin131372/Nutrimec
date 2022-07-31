@@ -38,6 +38,15 @@
                 </div>
                 <P>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
                 <input class="botons" type="submit" value="Ingresar">
+        <section class="form-register">
+        
+        <h4>Inicia Para Ver Recetas</h4>
+        <form action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+            <P>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Ingresar">
 
         </form>
         </section>
