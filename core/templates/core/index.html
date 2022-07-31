@@ -29,8 +29,14 @@
           <nav>
             <ul>
               <li><a  href="{% url 'contact' %}">Contactos </a></li>
-              <li><a href="{% url 'register' %}">Registro </a></li>
               <li><a href="{% url 'nosotros' %}">Nosotros </a></li>
+              {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">cerrar sesión </a></li>
+                <li><a href="{% url 'recetas' %}">Recetas</a></li>
+              {% else %}
+                <li><a href="{% url 'register' %}">Registro </a></li>
+                <li><a href="{% url 'login' %}">Inciar sesión </a></li>
+              {% endif %}
             </ul>
           </nav>
         </div>

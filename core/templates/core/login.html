@@ -1,0 +1,48 @@
+
+{% extends 'core/index.html' %}
+{% load  static %}
+{% block title %} login {% endblock %}
+
+{% block static %} 
+    <link  type='text/css' href='{% static "css/estiloForm.css" %}' rel='stylesheet'> 
+{% endblock %}
+{% block Navegación %}{% endblock %}
+    
+{% block content %}
+
+    <body>
+        {% if form.errors %}
+            <div class="alert alert-danger alert-dismissible" role="alert">
+              <div id="form_errors">
+                {% for key, value in form.errors.items %}
+                  <strong>{{ value }}</strong>
+                {% endfor %}
+              </div>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        {% endif %}
+        <section class="form-register">
+        
+        <h4>Inicia Para Ver Recetas</h4>
+        <form class="formulario" method="POST">
+            {% csrf_token %}
+                <div>
+                    <label for="username">Usuario</label>
+                    {{form.username}}
+                </div>
+                <div>
+                    <label for="username">Contraseña</label>
+                    {{form.password}}
+                </div>
+                <P>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                <input class="botons" type="submit" value="Ingresar">
+
+        </form>
+        </section>
+    
+    </body>
+{% endblock %}
+
+{% block footer %} {% endblock %}

@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from core.forms import loginForm, UserRegisterForm
+from core.views import *
 from core import views as core_views
+from django.contrib.auth import  views as auth_views
 
 urlpatterns = [
     path('', core_views.index, name="index" ),
-    path('register/', core_views.register, name="register" ),
+    path('register/', register.as_view(), name="register" ),
+    path('login/', CustomLoginView.as_view(redirect_authenticated_user=True, template_name = 'core/login.html',authentication_form=loginForm), name="login" ),
+    path('logout/', auth_views.LogoutView.as_view(template_name='core/logout.html'), name='logout'),
     path('contact/', core_views.contact, name="contact" ),
     path('nosotros/', core_views.nosotros, name="nosotros" ),
     path('recetas/', core_views.recetas, name="recetas" ),

@@ -10,9 +10,3 @@ class Project(models.Model):
     image = models.ImageField()
     created = models.DateTimeField(auto_now_add=True)
     update = models.DateTimeField(auto_now_add=True)
-
-class User(models.Model):
-    nombres = models.CharField(max_length=150)
-    apellidos = models.CharField(max_length=150)
-    correo = models.CharField(max_length=150)
-    password = models.CharField(max_length=150)
