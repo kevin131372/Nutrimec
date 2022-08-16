@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body{
+    padding: 0;
+    margin: 0;
+    background-size: 100%;
+}
+
+.titulo{
+    font-family: 'Aclonica', sans-serif;
+    font-size: 60px;
+}
+
+.contactos{
+    background: rgba(140, 140, 165, 0.178);
+    margin: 0px 70px 30px 70px;
+    
+}
+.contact-phone{
+    text-align:left;
+    font-size: 28px;
+    font-family: "fantasy";
+    margin: 10px 0 30px 40px;
+    
+}
+.contact-phone a{
+    color: rgb(16, 92, 92);
+}
+.contact{
+    text-align: left;
+    margin: 0px 100px 30px 40px;
+}
+.contactos:hover{
+    background: rgba(140, 140, 165, 0.295);
+}
+.contact .contact-a{
+    display: inline-table;
+}
+.contact-a{
+    padding: 10px;
+    
+    margin: 0px 70px 40px 70px;
+}
+.contact-a p{
+    padding: 10px;
+}
+.textcontac{
+    font-size: 20px;
+    float:right;
+    text-align: center;
+    padding: 30px 300px 30px 300px;
+}
+.map{
+    padding: 0 100px 50px 100px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+

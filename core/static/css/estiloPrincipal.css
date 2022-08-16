@@ -28,9 +28,13 @@
 
 .nav-link{
     text-decoration:none;
-    color:aliceblue;
-    
+    color:white;
 }
+.nav-link:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 /* contenido */
 .imgprin{
     background-color: #efefef;
@@ -191,7 +195,6 @@ header {
 }
 nav{
     float:right;
-    
 }
 
 nav ul li{
@@ -210,19 +213,19 @@ nav ul li a {
     font-weight:bold;
     cursor: pointer;
     padding: 10px;
-    border: 3px solid rgb(63, 40, 40);   
+    border: 3px solid rgb(126, 27, 27);   
     border-radius: 15px;
 }
 
 nav li a:hover{
-    background: #0a141d;
+    background-image: radial-gradient(circle at -12.29% 72.67%, #ff851a 0, #ff762b 8.33%, #ff6637 16.67%, #ff5440 25%, #f44146 33.33%, #e02c49 41.67%, #c81449 50%, #af0047 58.33%, #980046 66.67%, #840044 75%, #720043 83.33%, #620043 91.67%, #550044 100%);
 }
 
 nav ul li a::before{
     display: block;
     content: '';
     width: 0%;
-    background: #444;
+    background: rgb(105, 45, 45);
     height: 4px;
     top: 0;
     position:absolute;
@@ -255,7 +258,7 @@ nav ul li a:hover::before{
     cursor: pointer;
 }
 .btn-green:hover{
-    background-color: #630a0a;
+    background-image: radial-gradient(circle at -12.29% 72.67%, #ff851a 0, #ff762b 8.33%, #ff6637 16.67%, #ff5440 25%, #f44146 33.33%, #e02c49 41.67%, #c81449 50%, #af0047 58.33%, #980046 66.67%, #840044 75%, #720043 83.33%, #620043 91.67%, #550044 100%);
 }
 .btn-green:active{
     background-color: #415d69;

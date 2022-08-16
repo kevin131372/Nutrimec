@@ -1,3 +1,60 @@
 {% extends 'core/index.html' %}
 {% load  static %}
 {% block title %} Contact {% endblock %}
+
+{% block static %} 
+    <link  type='text/css' href='{% static "css/contact.css" %}' rel='stylesheet'> 
+{% endblock %}
+
+{% block content %} 
+      <header class="imgprin">
+        <section class="imgprincipal">
+          <img src="/static/img/contactanos.jpg" alt="" width="100%" height="420px">
+        </section>
+        <h1 class="titulo">
+            Contactanos
+          </h1>
+        <section class="cuerpo">
+          
+    <div class="textcontac">
+        <p>El Texas Heart Institute está ubicado en Denton A.
+        Edificio Cooley dentro del Texas Medical Center en Houston, Texas.
+        Póngase en contacto con nosotros utilizando la información de contacto a continuación.</p>
+    </div>
+    <div class="contactos">
+        <div class="contact-phone">
+            Phone 1: <a>832-355-3792</a><br>
+            Phone 2: <a>095-992-7672</a><br>
+            Email: <a>nutrimecvida@gmail.com</a>
+        </div>
+        <div class="contact">
+            <div class="contact-a">
+                <h3>Dirección física</h3>
+                <p>
+                    Instituto Texas Heart®<br><br>
+                    6770 Avenida Bertner<br><br>
+                    Houston, Texas 77030     
+                </p>
+            </div>
+            <div class="contact-a">
+                <h3>
+                    Dirección de envio</h3>
+                <p>
+                    Instituto del corazón de Texas<br><br>
+                    MC 3-116<br><br>
+                    apartado de correos 20345<br><br>
+                    Houston, Texas 77225-0345                                         
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <div class="map1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.408431642889!2d-95.
+            40156454862506!3d29.707926181917728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c
+            0747550dd15%3A0xb34591adbab9aa70!2s6770+Bertner+Ave%2C+Houston%2C+TX+77030!5e0!3m2!1sen!2sus!4
+            v1517008303207" width="600" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+      </header>
+      {% endblock %}

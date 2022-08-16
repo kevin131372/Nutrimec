@@ -49,17 +49,14 @@ class CustomLoginView(LoginView):
 def login (request):
     return render(request, 'core/login.html')
 
-def login (request):
-    return render(request, 'core/login.html')
-
 def index (request):
     return render(request, 'core/index.html')
 
 def contact (request):
     return render(request, 'core/contact.html')
     
-def nosotros (request):
-    return render(request, 'core/nosotros.html')
+def acerca (request):
+    return render(request, 'core/acerca.html')
 
 def recetas (request):
     return render(request, 'core/recetas.html')

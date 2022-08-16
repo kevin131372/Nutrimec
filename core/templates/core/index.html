@@ -22,14 +22,14 @@
             </li>
       </div>
 {% block Navegación %}
-    <header>
+    <header> 
       <ul >
         <div class="menu">
           <img class="img2" src="/static/img/logon.jpg" alt="">
           <nav>
             <ul>
               <li><a  href="{% url 'contact' %}">Contactos </a></li>
-              <li><a href="{% url 'nosotros' %}">Nosotros </a></li>
+              <li><a href="{% url 'acerca' %}">Acerca de </a></li>
               {% if user.is_authenticated %}
                 <li><a href="{% url 'logout' %}">cerrar sesión </a></li>
                 <li><a href="{% url 'recetas' %}">Recetas</a></li>
@@ -102,7 +102,7 @@
             <div class="subtitulos">
               <img src="/static/img/calabaza.jpg" alt="" class="efecto" width="310px">
               <h3 class="servicios">
-                Recetas 03
+                Recetas 03 
               </h3>
             </div>
             <div class="contenido">

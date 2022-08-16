@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+
+
+.tituacerca{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: radial-gradient(circle at 32.86% 48.5%, #58745d 0, #4f7059 12.5%, #426954 25%, #2f604c 37.5%, #145543 50%, #004a3b 62.5%, #004136 75%, #003a33 87.5%, #003634 100%);
+} 
+.titu1{
+    font-size: 30px;
+    padding-left: 30px;
+    font-family: 'Oleo Script Swash Caps';
+}
+.titu2{
+    font-size: 50px;
+    padding-left: 50px;
+    font-family: 'Shojumaru';
+}
+
+.contex{
+    background: rgba(50, 63, 63, 0.342);
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    padding: 20px 20px;
+    border-bottom-left-radius:50px ;
+    border-top-right-radius: 50px;
+    border: 5px solid rgb(11, 37, 36);
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.contex1{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.contex2 img{
+    border-radius: 18px;    
+}
+
+.doc{
+    background-image: radial-gradient(circle at 50% 50%, #e18f00 0, #e58200 8.33%, #e57313 16.67%, #df6121 25%, #d34f29 33.33%, #c23b2d 41.67%, #ab252e 50%, #930d2d 58.33%, #7e002c 66.67%, #6c002b 75%, #5c002a 83.33%, #4f002b 91.67%, #44002c 100%);
+    margin: 10px 20px;
+    display: flex;
+    padding: 20px 10px;
+    border-radius: 50px;
+    
+}
+.doc1 img{
+    border-radius: 100px;
+    box-shadow: 10px 10px 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.doc2{
+    padding: 10px 30px;
+    font-size: 18px;
+}
+.paf{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    
+    font-family: 'Aclonica', sans-serif;
+   
+}
+.paf1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(73, 138, 138);
+    font-family: 'Oleo Script Swash Caps';
+}
+.doc p{
+    padding: 5px;
+}
